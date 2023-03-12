@@ -1,0 +1,15 @@
+/home/hronoz/oop/bin/Debug/net7.0/oop
+/home/hronoz/oop/bin/Debug/net7.0/oop.deps.json
+/home/hronoz/oop/bin/Debug/net7.0/oop.runtimeconfig.json
+/home/hronoz/oop/bin/Debug/net7.0/oop.dll
+/home/hronoz/oop/bin/Debug/net7.0/oop.pdb
+/home/hronoz/oop/obj/Debug/net7.0/oop.csproj.AssemblyReference.cache
+/home/hronoz/oop/obj/Debug/net7.0/oop.GeneratedMSBuildEditorConfig.editorconfig
+/home/hronoz/oop/obj/Debug/net7.0/oop.AssemblyInfoInputs.cache
+/home/hronoz/oop/obj/Debug/net7.0/oop.AssemblyInfo.cs
+/home/hronoz/oop/obj/Debug/net7.0/oop.csproj.CoreCompileInputs.cache
+/home/hronoz/oop/obj/Debug/net7.0/oop.dll
+/home/hronoz/oop/obj/Debug/net7.0/refint/oop.dll
+/home/hronoz/oop/obj/Debug/net7.0/oop.pdb
+/home/hronoz/oop/obj/Debug/net7.0/oop.genruntimeconfig.cache
+/home/hronoz/oop/obj/Debug/net7.0/ref/oop.dll
