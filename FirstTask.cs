@@ -15,9 +15,9 @@ public class FirstTask : DoTask<(double a, double b, double c)>
     {
         if (b < a && a < c)
         {
-            a = a * 2;
-            b = b * 2;
-            c = c * 2;
+            a *= 2;
+            b *= 2;
+            c *= 2;
         }
         else if (a < b && b < c)
         {
@@ -26,7 +26,7 @@ public class FirstTask : DoTask<(double a, double b, double c)>
         else
         {
             double[] array = { a, b, c };
-            double min = 1000000000;
+            double min = Double.MinValue;
             for (int i = 0; i < array.Length; i++)
             {
                 if (array[i] < min)

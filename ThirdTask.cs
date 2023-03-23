@@ -22,7 +22,7 @@ public class ThirdTask : DoTask<(double sum1, double sum2, double sum3)> {
     private double findSum2() {
         double sum = 1;
 
-        for (double i = 1, j = 2; i < 31 && j < 32; i++,j++) {
+        for (double i = 1, j = 2; i <= 31 && j <= 32; i++,j++) {
             sum *= i / j;
         }
 
