@@ -5,15 +5,12 @@ public class ThirdTask : DoTask<(double sum1, double sum2, double sum3)> {
     private double findSum1() {
         double sum = 0; 
         double current = 0;
-        double prev = 0;
-
-        for (int i = 0; i < int.MaxValue; i++) {
-            current = Math.Pow(Math.E, -Math.Sqrt(i));
+        int n = 0;
+    
+        while (current <= accurancy) {
+            current = Math.Pow(Math.E, -Math.Sqrt(n));
             sum += current;
-            if (Math.Abs(prev - current) <= accurancy) {
-                break;
-            }
-            prev = current;
+            n++;
         }
 
         return sum;

@@ -21,9 +21,9 @@ public class Facade
     }
 
     public void doFirstTask() {
-        double a = 1;
-        double b = 2;
-        double c = 3;
+        Console.Write("a: "); double a = Convert.ToDouble(Console.ReadLine());
+        Console.Write("b: "); double b = Convert.ToDouble(Console.ReadLine());
+        Console.Write("c: "); double c = Convert.ToDouble(Console.ReadLine());
 
         this.printTaskResult("First task", this.taskRunner(new FirstTask(a, b, c)), () => {
             Console.WriteLine($"a: {a}");
@@ -33,10 +33,10 @@ public class Facade
     }
 
     public void doSecondTask() {
-        int m = 1;
+        Console.Write("m: "); int m = Convert.ToInt32(Console.ReadLine());
             
         this.printTaskResult("Second task", this.taskRunner(new SecondTask(m)), () => {
-            Console.WriteLine($"M: {m}");
+            Console.WriteLine($"m: {m}");
         });
     }
 
@@ -45,10 +45,10 @@ public class Facade
     }
 
     public void doFourthTask() {
-        double a = 1;
-        double b = 2;
-        double c = 7;
-        double d = 8;
+        Console.Write("a: "); double a = Convert.ToDouble(Console.ReadLine());
+        Console.Write("b: "); double b = Convert.ToDouble(Console.ReadLine());
+        Console.Write("c: "); double c = Convert.ToDouble(Console.ReadLine());
+        Console.Write("d: "); double d = Convert.ToDouble(Console.ReadLine());
 
         this.printTaskResult("Fourth task", this.taskRunner(new FourthTask(a, b, c, d)), () => {
             Console.WriteLine($"a: {a}");

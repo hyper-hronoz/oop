@@ -26,7 +26,7 @@ public class FirstTask : DoTask<(double a, double b, double c)>
         else
         {
             double[] array = { a, b, c };
-            double min = Double.MinValue;
+            double min = Double.MaxValue;
             for (int i = 0; i < array.Length; i++)
             {
                 if (array[i] < min)
