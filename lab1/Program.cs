@@ -3,9 +3,11 @@ using System;
 
 public delegate void CallBack();
 
+
 public class Facade
 {
     private IDoTask taskRunner(IDoTask task) {
+        CallBack hello = () => {};
         task.doTask(); 
         return task;
     }
@@ -57,6 +59,8 @@ public class Facade
             Console.WriteLine($"d: {d}");
         });
     }
+
+    () => {};
 
     public void runAll() {
         this.doFirstTask(); 

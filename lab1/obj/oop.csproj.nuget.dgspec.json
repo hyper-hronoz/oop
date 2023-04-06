@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/hronoz/oop/oop.csproj": {}
+    "/home/hronoz/oop/lab1/oop.csproj": {}
   },
   "projects": {
-    "/home/hronoz/oop/oop.csproj": {
+    "/home/hronoz/oop/lab1/oop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/hronoz/oop/oop.csproj",
+        "projectUniqueName": "/home/hronoz/oop/lab1/oop.csproj",
         "projectName": "oop",
-        "projectPath": "/home/hronoz/oop/oop.csproj",
+        "projectPath": "/home/hronoz/oop/lab1/oop.csproj",
         "packagesPath": "/home/hronoz/.nuget/packages/",
-        "outputPath": "/home/hronoz/oop/obj/",
+        "outputPath": "/home/hronoz/oop/lab1/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/hronoz/.nuget/NuGet/NuGet.Config"

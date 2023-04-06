@@ -16,6 +16,13 @@ public class Facade {
         ThirdTask thirdTask = new ThirdTask();
         thirdTask.doTask();
     }
+
+    public void doFourthTask() {
+        FourthTask task = new FourthTask();
+        task.print();
+        task.doTask();
+        task.print();
+    }
 };
 
 
@@ -24,5 +31,7 @@ public class Program {
         Facade facade = new Facade(); 
         facade.doFirstTask();
         facade.doSecondTask();
+        // facade.doThirdTask();
+        facade.doFourthTask();
     }
 }
