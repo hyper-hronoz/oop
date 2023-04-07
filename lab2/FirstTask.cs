@@ -35,8 +35,9 @@ public class FirstTask {
         }
     }
 
-    public double getResult() {
-        return this.result;
+    public void print() {
+        Console.WriteLine();
+        Console.WriteLine(this.result);
     }
 }
 

@@ -49,7 +49,8 @@ public class SecondTask
         }
     }
 
-    public void printResult() {
+    public void print() {
+        Console.WriteLine();
         for (int i = 0; i < areas.GetLength(0); i++) {
             for (int j = 0; j < areas.GetLength(1); j++) {
                 Console.Write(areas[i, j] + " ");

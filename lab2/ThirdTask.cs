@@ -7,6 +7,7 @@ public class ThirdTask
 
     public ThirdTask()
     {
+        this.array = new double[days];
         for (int i = 0; i < this.days; i++)
         {
             Random random = new Random();
@@ -26,7 +27,7 @@ public class ThirdTask
         this.maximalDay = localMaximal;
     }
 
-    public void printResult() {
+    public void print() {
         Console.WriteLine(this.averangeTemp); 
         Console.WriteLine(this.maximalDay); 
     }
