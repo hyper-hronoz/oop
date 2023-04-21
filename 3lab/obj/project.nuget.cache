@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "cBm9IOyXd4l2NaDq+Utgu+fH9QX7q1mB1GrnFMn/vNSIVfXRfGPiJ6+x3w5sERn5YvyaAH4CSZVnalY7k7Iilg==",
+  "success": true,
+  "projectFilePath": "/home/hronoz/oop/3lab/3lab.csproj",
+  "expectedPackageFiles": [
+    "/home/hronoz/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.3/microsoft.aspnetcore.app.ref.7.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

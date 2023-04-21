@@ -1,0 +1,15 @@
+/home/hronoz/oop/4lab/bin/Debug/net7.0/4lab
+/home/hronoz/oop/4lab/bin/Debug/net7.0/4lab.deps.json
+/home/hronoz/oop/4lab/bin/Debug/net7.0/4lab.runtimeconfig.json
+/home/hronoz/oop/4lab/bin/Debug/net7.0/4lab.dll
+/home/hronoz/oop/4lab/bin/Debug/net7.0/4lab.pdb
+/home/hronoz/oop/4lab/obj/Debug/net7.0/4lab.csproj.AssemblyReference.cache
+/home/hronoz/oop/4lab/obj/Debug/net7.0/4lab.GeneratedMSBuildEditorConfig.editorconfig
+/home/hronoz/oop/4lab/obj/Debug/net7.0/4lab.AssemblyInfoInputs.cache
+/home/hronoz/oop/4lab/obj/Debug/net7.0/4lab.AssemblyInfo.cs
+/home/hronoz/oop/4lab/obj/Debug/net7.0/4lab.csproj.CoreCompileInputs.cache
+/home/hronoz/oop/4lab/obj/Debug/net7.0/4lab.dll
+/home/hronoz/oop/4lab/obj/Debug/net7.0/refint/4lab.dll
+/home/hronoz/oop/4lab/obj/Debug/net7.0/4lab.pdb
+/home/hronoz/oop/4lab/obj/Debug/net7.0/4lab.genruntimeconfig.cache
+/home/hronoz/oop/4lab/obj/Debug/net7.0/ref/4lab.dll
