@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "crXfrX2ikGVjqbPk/WeA7aMk6Tq4QcpsnuBbDOa1Q+Gh5y6RB8kcSY7zWtIoPvYXeZ48dbZ8mH8D/KSqX9gHmw==",
+  "success": true,
+  "projectFilePath": "/home/hronoz/oop/lab22/lab22.csproj",
+  "expectedPackageFiles": [
+    "/home/hronoz/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.3/microsoft.aspnetcore.app.ref.7.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

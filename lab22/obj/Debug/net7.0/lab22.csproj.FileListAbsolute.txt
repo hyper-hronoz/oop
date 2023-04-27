@@ -1,0 +1,15 @@
+/home/hronoz/oop/lab22/bin/Debug/net7.0/lab22
+/home/hronoz/oop/lab22/bin/Debug/net7.0/lab22.deps.json
+/home/hronoz/oop/lab22/bin/Debug/net7.0/lab22.runtimeconfig.json
+/home/hronoz/oop/lab22/bin/Debug/net7.0/lab22.dll
+/home/hronoz/oop/lab22/bin/Debug/net7.0/lab22.pdb
+/home/hronoz/oop/lab22/obj/Debug/net7.0/lab22.csproj.AssemblyReference.cache
+/home/hronoz/oop/lab22/obj/Debug/net7.0/lab22.GeneratedMSBuildEditorConfig.editorconfig
+/home/hronoz/oop/lab22/obj/Debug/net7.0/lab22.AssemblyInfoInputs.cache
+/home/hronoz/oop/lab22/obj/Debug/net7.0/lab22.AssemblyInfo.cs
+/home/hronoz/oop/lab22/obj/Debug/net7.0/lab22.csproj.CoreCompileInputs.cache
+/home/hronoz/oop/lab22/obj/Debug/net7.0/lab22.dll
+/home/hronoz/oop/lab22/obj/Debug/net7.0/refint/lab22.dll
+/home/hronoz/oop/lab22/obj/Debug/net7.0/lab22.pdb
+/home/hronoz/oop/lab22/obj/Debug/net7.0/lab22.genruntimeconfig.cache
+/home/hronoz/oop/lab22/obj/Debug/net7.0/ref/lab22.dll
