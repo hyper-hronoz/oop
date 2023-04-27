@@ -1,0 +1,15 @@
+/home/hronoz/oop/31lab/bin/Debug/net7.0/31lab
+/home/hronoz/oop/31lab/bin/Debug/net7.0/31lab.deps.json
+/home/hronoz/oop/31lab/bin/Debug/net7.0/31lab.runtimeconfig.json
+/home/hronoz/oop/31lab/bin/Debug/net7.0/31lab.dll
+/home/hronoz/oop/31lab/bin/Debug/net7.0/31lab.pdb
+/home/hronoz/oop/31lab/obj/Debug/net7.0/31lab.csproj.AssemblyReference.cache
+/home/hronoz/oop/31lab/obj/Debug/net7.0/31lab.GeneratedMSBuildEditorConfig.editorconfig
+/home/hronoz/oop/31lab/obj/Debug/net7.0/31lab.AssemblyInfoInputs.cache
+/home/hronoz/oop/31lab/obj/Debug/net7.0/31lab.AssemblyInfo.cs
+/home/hronoz/oop/31lab/obj/Debug/net7.0/31lab.csproj.CoreCompileInputs.cache
+/home/hronoz/oop/31lab/obj/Debug/net7.0/31lab.dll
+/home/hronoz/oop/31lab/obj/Debug/net7.0/refint/31lab.dll
+/home/hronoz/oop/31lab/obj/Debug/net7.0/31lab.pdb
+/home/hronoz/oop/31lab/obj/Debug/net7.0/31lab.genruntimeconfig.cache
+/home/hronoz/oop/31lab/obj/Debug/net7.0/ref/31lab.dll
