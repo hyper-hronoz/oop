@@ -1,0 +1,15 @@
+/home/hronoz/oop/lab21/obj/Debug/net7.0/lab21.csproj.AssemblyReference.cache
+/home/hronoz/oop/lab21/obj/Debug/net7.0/lab21.GeneratedMSBuildEditorConfig.editorconfig
+/home/hronoz/oop/lab21/obj/Debug/net7.0/lab21.AssemblyInfoInputs.cache
+/home/hronoz/oop/lab21/obj/Debug/net7.0/lab21.AssemblyInfo.cs
+/home/hronoz/oop/lab21/obj/Debug/net7.0/lab21.csproj.CoreCompileInputs.cache
+/home/hronoz/oop/lab21/bin/Debug/net7.0/lab21
+/home/hronoz/oop/lab21/bin/Debug/net7.0/lab21.deps.json
+/home/hronoz/oop/lab21/bin/Debug/net7.0/lab21.runtimeconfig.json
+/home/hronoz/oop/lab21/bin/Debug/net7.0/lab21.dll
+/home/hronoz/oop/lab21/bin/Debug/net7.0/lab21.pdb
+/home/hronoz/oop/lab21/obj/Debug/net7.0/lab21.dll
+/home/hronoz/oop/lab21/obj/Debug/net7.0/refint/lab21.dll
+/home/hronoz/oop/lab21/obj/Debug/net7.0/lab21.pdb
+/home/hronoz/oop/lab21/obj/Debug/net7.0/lab21.genruntimeconfig.cache
+/home/hronoz/oop/lab21/obj/Debug/net7.0/ref/lab21.dll

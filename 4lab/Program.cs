@@ -92,11 +92,11 @@ public static class FifthTask {
 
 public class Program {
   public static void Main() {
-    // TaskOne.doTask();
-    // TaskSecond.doTask("In consequat dolor in dapibus vitae nascetur diam mus, quisque dignissim dignissim id ullamcorper, etiam sapien id lectus turpis imperdiet.");
-    // TaskThird.doTask("hello there 22:00 11:55", 12);
-    // FourhTask.doTask(File.ReadAllText("./theFuck.txt"));
-    // string str = FifthTask.changeString(File.ReadAllText("./theFuck2.txt"));
-    // FifthTask.overrideFile(str);
+    TaskOne.doTask();
+    TaskSecond.doTask("In consequat dolor in dapibus vitae nascetur diam mus, quisque dignissim dignissim id ullamcorper, etiam sapien id lectus turpis imperdiet.");
+    TaskThird.doTask("hello there 22:00 11:55", 12);
+    FourhTask.doTask(File.ReadAllText("./theFuck.txt"));
+    string str = FifthTask.changeString(File.ReadAllText("./theFuck2.txt"));
+    FifthTask.overrideFile(str);
   }
 }
