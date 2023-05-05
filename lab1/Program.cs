@@ -60,8 +60,6 @@ public class Facade
         });
     }
 
-    () => {};
-
     public void runAll() {
         this.doFirstTask(); 
         this.doSecondTask();

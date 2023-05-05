@@ -240,12 +240,13 @@ class Album
         }
     }
 
-    public List<Disk> getRecords() {
+    public List<Disk> getRecords()
+    {
         return this.list;
     }
 }
 
-class SexShop
+class DiskShop
 {
     private Hashtable storage = new Hashtable();
 
@@ -262,7 +263,8 @@ class SexShop
                     return;
                 }
                 album.appendDisk(disk);
-                if (this.storage.Contains(tableRecordName)) {
+                if (this.storage.Contains(tableRecordName))
+                {
                     this.storage.Remove(tableRecordName);
                 }
                 this.storage.Add(tableRecordName, album);
@@ -296,14 +298,41 @@ class SexShop
         this.storage.Remove(name);
     }
 
+    public void printAlbum(string name)
+    {
+        Album album = (Album)this.storage[name];
+        Console.WriteLine("Album: " + album.getName());
+        foreach (Disk disk in album.getRecords())
+        {
+            Console.Write("Disk: " + disk.getName() + " " + disk.getPrice() + "\n");
+        }
+    }
+
     public void printAll()
     {
         foreach (string name in this.storage.Keys)
         {
             Album album = (Album)this.storage[name];
             Console.WriteLine("Album: " + album.getName());
-            foreach (Disk disk in album.getRecords()) {
+            foreach (Disk disk in album.getRecords())
+            {
                 Console.Write("Disk: " + disk.getName() + " " + disk.getPrice() + "\n");
+            }
+        }
+    }
+
+    public void printBySinger(string diskName)
+    {
+        foreach (string name in this.storage.Keys)
+        {
+            Album album = (Album)this.storage[name];
+            Console.WriteLine("Album: " + album.getName());
+            foreach (Disk disk in album.getRecords())
+            {
+                if (disk.getName() == diskName)
+                {
+                    Console.Write("Disk: " + disk.getName() + " " + disk.getPrice() + "\n");
+                }
             }
         }
     }
@@ -350,7 +379,7 @@ class Program
             Console.WriteLine();
         }
 
-        SexShop shop = new SexShop();
+        DiskShop shop = new DiskShop();
 
         shop.addAlbum(new Album("Powerwolf"));
         shop.addDisk("Powerwolf", new Disk("Sancitified with dinomite", 12));
@@ -362,6 +391,8 @@ class Program
         shop.addDisk("Lord of the lost", new Disk("13th", 11));
         shop.addDisk("Lord of the lost", new Disk("Satans fall", 14));
         shop.deleteDisk("Lord of the lost", "13th");
+
+        shop.printAlbum("Powerwolf");
 
         shop.printAll();
     }

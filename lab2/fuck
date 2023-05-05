@@ -1,0 +1,345 @@
+public class FifthTask {
+  private string[,] matrix;
+  private string chars = "$%#@!*abcdefghijklmnopqrstuvwxyz1234567890?;:ABCDEFGHIJKLMNOPQRSTUVWXYZ^&";
+
+    public FifthTask()
+    {
+        this.matrix = new string[10, 10];
+        for (int i = 0; i < 10; i++)
+        {
+            for (int j = 0; j < 10; j++)
+            {
+                Random random = new Random();
+                Random rand = new Random();
+                int num = rand.Next(0, this.chars.Length);
+                matrix[i, j] = this.chars[num] + "";
+            }
+        }
+    }
+
+    public void remove(int row, int column) {
+        for (int i = 0; i < this.matrix.GetLength(0); i++) {
+            for (int j = 0; j < this.matrix.GetLength(1); j++) {
+                if (i == row && j == column) {
+                    this.matrix[i, j] = "";
+                }
+            }
+        }
+    }
+
+    public void appendStrings() {
+        string[,] tempMatrix = new string[20, 20];
+        int a = 0;
+        int b = 0;
+        for (int i = 0; i < tempMatrix.GetLength(0); i++) {
+            for (int j = 0; j < tempMatrix.GetLength(1); j++) {
+                if ((i + j) % 2 == 1) {
+                    Random random = new Random();
+                    tempMatrix[i, j] = this.chars[random.Next(this.chars.Length)] + "";
+                } else {
+                    tempMatrix[i, j] = this.matrix[a, b];
+                    b++;
+                }
+            }
+            b = 0;
+            a++;
+            if (a >= 10) {
+                this.matrix = tempMatrix;
+                return;
+            }
+        }
+
+        this.matrix = tempMatrix;
+    }
+
+    public void print()
+    {
+        Console.WriteLine();
+        for (int i = 0; i < this.matrix.GetLength(0); i++)
+        {
+            for (int j = 0; j < this.matrix.GetLength(1); j++)
+            {
+                Console.Write(this.matrix[i, j] + " ");
+            }
+            Console.WriteLine();
+        }
+    }
+};
+
+// See https://aka.ms/new-console-template for more information
+//
+public class FirstTask {
+    private double a = 0;
+    private double b = 0;
+    private double c = 0;
+    private double d = 0;
+
+    private double result = 0;
+
+    public FirstTask(double a, double b, double c, double d) {
+        this.a = a;
+        this.b = b;
+        this.c = c;
+        this.d = d;
+    }
+
+    public void doTask()
+    {
+        double[,] areas = { { a, b, c }, { b, c, d }, { a, c, d } };
+        for (int i = 0; i < areas.GetLength(0); i++) {
+            double s = 0;
+
+            double x = areas[i, 0];
+            double y = areas[i, 1];
+            double z = areas[i, 2];
+
+            double p = (x + y+ z) / 2;
+
+            s = Math.Sqrt(p * (Math.Sqrt(p - x) * (Math.Sqrt(p - y) * (Math.Sqrt(p - z)))));
+            if (s > this.result) {
+                this.result = s;
+            }
+        }
+    }
+
+    public void print() {
+        Console.WriteLine();
+        Console.WriteLine(this.result);
+    }
+}
+
+public class FourthTask
+{
+    private string[,] matrix;
+
+    private string vowels = "AOEiAYUoeayu";
+
+    private List<string> list = new List<string>{"hello", "there" , "is", "no", "emotion", "ther", "is"};
+
+    public FourthTask()
+    {
+        this.matrix = new string[10, 10];
+        for (int i = 0; i < 10; i++)
+        {
+            for (int j = 0; j < 10; j++)
+            {
+                Random random = new Random();
+                string chars =
+                    "$%#@!*abcdefghijklmnopqrstuvwxyz1234567890?;:ABCDEFGHIJKLMNOPQRSTUVWXYZ^&";
+                Random rand = new Random();
+                int num = rand.Next(0, chars.Length);
+                matrix[i, j] = chars[num] + "";
+            }
+        }
+    }
+
+    public void doTask()
+    {
+        string[,] tempMatrix = new string[10, 5];
+        int a = 0;
+        int b = 0;
+        for (int i = 0; i < 10; i++)
+        {
+            for (int j = 0; j < 10; j++)
+            {
+                if ((i + j) % 2 != 0)
+                {
+                    tempMatrix[a, b] = this.matrix[i, j];
+                    b++;
+                }
+            }
+            b = 0;
+            a++;
+        }
+        this.matrix = tempMatrix;
+
+        List<string> tempList = new List<string>{};
+        foreach(string item in this.list)
+        {
+            bool isContains = false;
+            foreach(var ch in this.vowels) {
+                if (item[0] == ch) {
+                    isContains = true; 
+                }
+            }
+            if (!isContains) {
+                tempList.Add(item);
+            }
+        }
+
+        this.list = tempList;
+    }
+
+    public void print()
+    {
+        Console.WriteLine();
+        for (int i = 0; i < this.matrix.GetLength(0); i++)
+        {
+            for (int j = 0; j < this.matrix.GetLength(1); j++)
+            {
+                Console.Write(this.matrix[i, j] + " ");
+            }
+            Console.WriteLine();
+        }
+
+        foreach(string item in this.list)  {
+            Console.WriteLine(item);
+        }
+    }
+}
+﻿
+// See https://aka.ms/new-console-template for more information
+//
+public class Facade {
+    public void doFirstTask() {
+        FirstTask firstTask = new FirstTask(1, 2, 3, 4);
+        firstTask.print();
+        firstTask.doTask();
+        firstTask.print();
+    }
+
+    public void doSecondTask() {
+        SecondTask secondTask = new SecondTask();
+        secondTask.print();
+        secondTask.doTask();
+        secondTask.print();
+    }
+
+    public void doThirdTask() {
+        ThirdTask thirdTask = new ThirdTask();
+        thirdTask.print();
+        thirdTask.doTask();
+        thirdTask.print();
+    }
+
+    public void doFourthTask() {
+        FourthTask task = new FourthTask();
+        task.print();
+        task.doTask();
+        task.print();
+    }
+
+    public void doFifthTask() {
+        FifthTask fifthTask = new FifthTask();
+        fifthTask.print();
+        // fifthTask.remove(1, 2);
+        // fifthTask.remove(1, 3);
+        fifthTask.appendStrings();
+        fifthTask.print();
+    }
+};
+
+
+public class Program {
+    public static void Main() {
+        Facade facade = new Facade(); 
+        facade.doFirstTask();
+        facade.doSecondTask();
+        facade.doThirdTask();
+        facade.doFourthTask();
+        facade.doFifthTask();
+    }
+}
+public class SecondTask
+{
+    private const int MATRIX_SIZE = 25;
+    private double[,] areas;
+    private int maxRowIndex = 0;
+    private int minRowIndex = 0;
+
+    public SecondTask() {
+        this.areas = new double[MATRIX_SIZE, MATRIX_SIZE];
+
+        for (int i = 0; i < SecondTask.MATRIX_SIZE; i++)
+        {
+            for (int j = 0; j < SecondTask.MATRIX_SIZE; j++)
+            {
+                Random random = new Random();
+                areas[i, j] = random.Next(10);
+            }
+        }
+    }
+
+    public void doTask()
+    {
+        double maxAverangeSum = Double.MinValue;
+        double minAverangeSum = Double.MaxValue;
+
+        for (int i = 0; i < SecondTask.MATRIX_SIZE; i++)
+        {
+            double averange = 0;
+            for (int j = 0; j < SecondTask.MATRIX_SIZE; j++)
+            {
+                averange += areas[i, j];
+            }
+            if (averange > maxAverangeSum)
+            {
+                maxAverangeSum = averange; maxRowIndex = i;
+            }
+            if (averange < minAverangeSum)
+            {
+                minAverangeSum = averange;
+                minRowIndex = i;
+            }
+        }
+
+        for (int i = 0; i < areas.GetLength(1); i++) {
+            double temp = 0;
+            temp = areas[maxRowIndex, i];
+            areas[maxRowIndex, i] = areas[minRowIndex, i];
+            areas[minRowIndex, i] = temp;
+        }
+    }
+
+    public void print() {
+        Console.WriteLine();
+        for (int i = 0; i < areas.GetLength(0); i++) {
+            for (int j = 0; j < areas.GetLength(1); j++) {
+                Console.Write(areas[i, j] + " ");
+            }
+            Console.WriteLine();
+        }
+    }
+
+    public int getMaxRowIndex() {
+        return this.maxRowIndex;
+    }
+
+    public int getMinRowIndex() {
+        return this.minRowIndex;
+    }
+}
+public class ThirdTask
+{
+    private int days = 31;
+    private double[] array;
+    private double maximalDay;
+    private double averangeTemp;
+
+    public ThirdTask()
+    {
+        this.array = new double[days];
+        for (int i = 0; i < this.days; i++)
+        {
+            Random random = new Random();
+            this.array[i] = random.Next(10);
+        }
+    }
+
+    public void doTask() { 
+        double localMaximal = Double.MinValue;
+        for (int i = 0; i < this.days; i++) {
+            this.averangeTemp += array[i];
+            if (array[i] > localMaximal) {
+                localMaximal = array[i];
+            }
+        }
+        this.averangeTemp *= 1 / days;
+        this.maximalDay = localMaximal;
+    }
+
+    public void print() {
+        Console.WriteLine(this.averangeTemp); 
+        Console.WriteLine(this.maximalDay); 
+    }
+}
